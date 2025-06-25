@@ -6,19 +6,22 @@
   <title>About Me | Salome Onianwa</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-white font-sans">
+<body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-white font-sans transition-colors duration-300">
   <!-- Navbar -->
   <nav class="flex justify-between items-center p-4 shadow-md bg-purple-600 text-white">
     <h1 class="text-xl font-bold">Salome Onianwa</h1>
     <div class="space-x-4">
-      <a href="index.html">Home</a>
-      <a href="about.html" class="underline">About</a>
+      <a href="index.html" class="underline">Home</a>
+      <a href="about.html">About</a>
       <a href="projects.html">Projects</a>
       <a href="blog.html">Blog</a>
       <a href="contact.html">Contact</a>
+      <!-- Dark mode toggle -->
+      <button onclick="document.documentElement.classList.toggle('dark')" class="ml-4 bg-white text-purple-600 dark:bg-gray-800 dark:text-purple-400 px-3 py-1 rounded shadow hover:scale-105 transition-transform">
+        🌗 Toggle Theme
+      </button>
     </div>
   </nav>
-
   <!-- About Section -->
   <section class="px-6 py-20 max-w-4xl mx-auto">
     <h2 class="text-4xl font-bold mb-6">About Me</h2>
